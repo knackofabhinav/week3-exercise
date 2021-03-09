@@ -1,38 +1,149 @@
-.App {
+.exOne{
+  display: flex;
+  padding: 20px;
+}
+
+.exOne > .item {
+  padding: 20px;
+  border: 1px solid black;
+  margin: 20px;
+}
+
+/* align: stretch|center|flex-start|flex-end|baseline| */
+
+.exTwo{
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  height: 500px;
+}
+
+.exTwo > .item {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 5px;
+}
+
+.exTwo > .item3{
+  align-self: flex-end;
+}
+
+.exFour{
+  display: flex;
+}
+
+.exFour > .card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 15em;
+  margin: 5em;
+  padding: 20px;
+  /* height: 50em; */
+  justify-content: space-between;
+}
+
+
+.exSix{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.exSix > .card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 20em;
+  margin: 5em;
+  padding: 20px;
+  height: 40em;
+  justify-content: space-between;
+}
+
+.exLast > .card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 20em;
+    margin: 5em;
+    padding: 20px;
+    height: 40em;
+    justify-content: space-between;
+}
+
+.card > p{
+  flex-grow: 1;
+}
+
+.btn-primary{
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  height: 35px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.positioning{
+  border: 1px solid black;
+}
+
+.superscript{
+  position: relative;
+  bottom: 1em;
+  font-size:small;
+}
+
+.p-exTwo{
+  border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+  background-color:rgb(230, 228, 228);
+  color: rgb(0, 0, 0);
+  padding: 4px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+.p-exTwo > p {
+  margin: 5px;
+  padding: 0px;
+}
+
+.btn-floating {
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 100%;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.btn-floating > p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.thumbnail{
+  display: relative;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head-img{
+  width:100%
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.close-btn{
+  position: absolute;
+  top: 0;
 }

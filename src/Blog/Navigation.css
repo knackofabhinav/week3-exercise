@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: White;
+}
+
+li{
+    margin: 5px;
+    padding: 5px;
+    color: White;
+}
+
+.btn{
+    background-color: transparent;
+    color: White;
+    border: white solid 1px;
+    margin: 2px;
+    padding: 4px;
+    border-radius: 8px 8px 8px 8px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
